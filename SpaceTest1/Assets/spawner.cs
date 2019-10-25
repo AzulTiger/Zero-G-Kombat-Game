@@ -21,7 +21,7 @@ public class spawner : MonoBehaviour
         {
             GameObject plane = Instantiate(planes[Random.Range(0, 2)], points[Random.Range(0, 4)]);
             plane.transform.localPosition = Vector3.zero;
-            plane.transform.Rotate(transform.forward,90 * Random.Range(0,4));
+            //plane.transform.Rotate(transform.forward,90 * Random.Range(0,4));
             timer -= beat;
 
         }
