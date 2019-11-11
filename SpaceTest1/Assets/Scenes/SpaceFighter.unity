@@ -427,6 +427,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 893846966}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &457979885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457979884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f7b7bd8af16464b9048f6776ccd667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &500266776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1648,6 +1660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453848910}
   - component: {fileID: 1453848909}
+  - component: {fileID: 1453848911}
   m_Layer: 10
   m_Name: spaceship1.1 Container
   m_TagString: Untagged
@@ -1684,6 +1697,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453848911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453848908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5b0df802af674a9a2800238b86476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  obstacleRange: 4
+  paintballPrefab: {fileID: 2715103672964912813, guid: 0c5f1b759642aed459847d1751aa7dae,
+    type: 3}
 --- !u!1 &1481500445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5694609532279931918, guid: 0173ba01b78fd214984e0ec5d9d686aa,
