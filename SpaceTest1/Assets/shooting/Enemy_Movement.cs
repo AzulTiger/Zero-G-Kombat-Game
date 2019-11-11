@@ -10,6 +10,8 @@ public class Enemy_Movement : MonoBehaviour
     private bool _alive;
     public GameObject paintballPrefab;
     private GameObject _paintball;
+    public GameObject Player;
+    public float movementSpeed = 4;
 
     // Start is called before the first frame update
     void Start()
@@ -22,12 +24,16 @@ public class Enemy_Movement : MonoBehaviour
     {
         if (_alive)
         {
-            transform.Translate(0, 0, speed * Time.deltaTime);
+            //transform.Translate(0, 0, speed * Time.deltaTime);
+
+            transform.LookAt(Player.transform);
+            transform.position += transform.forward * movementSpeed * Time.deltaTime;
         }
 
+        //enemy looking forward
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        if (Physics.SphereCast(ray, 0.75f, out hit))
+        if (Physics.SphereCast(ray, 0.35f, out hit))
         {
             GameObject hitObject = hit.transform.gameObject;
             if (hitObject.GetComponent<Playerinfo>())
@@ -35,7 +41,7 @@ public class Enemy_Movement : MonoBehaviour
                 if (_paintball == null)
                 {
                     _paintball = Instantiate(paintballPrefab) as GameObject;
-                    _paintball.transform.position = transform.TransformPoint(Vector3.forward * 1.5f);
+                    _paintball.transform.position = transform.TransformPoint(Vector3.forward * 2f);
                     _paintball.transform.rotation = transform.rotation;
                 }
             }

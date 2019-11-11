@@ -21,7 +21,7 @@ public class LaserBall : MonoBehaviour
             player.Hurt(damage);
 
         }
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 
 
