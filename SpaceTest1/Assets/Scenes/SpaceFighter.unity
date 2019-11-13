@@ -1273,8 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 457979884}
-  rotationalDamp: 0.5
-  movementSpeed: 8
+  movementSpeed: 1
 --- !u!4 &1206828866
 Transform:
   m_ObjectHideFlags: 0
@@ -1290,12 +1289,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &1356405219 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2015248, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 893846966}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1380753409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,14 +1675,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453848908}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc94ab38ebfab8744a535b1c9102eb6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 457979884}
-  rotationalDamp: 0.5
-  movementSpeed: 8
+  movementSpeed: 1
 --- !u!4 &1453848910
 Transform:
   m_ObjectHideFlags: 0
@@ -1712,7 +1704,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453848908}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dab5b0df802af674a9a2800238b86476, type: 3}
   m_Name: 
@@ -1901,10 +1893,14 @@ MonoBehaviour:
   planes:
   - {fileID: 1453848908}
   - {fileID: 1206828864}
-  player: {fileID: 457979884}
-  view: {fileID: 1356405219}
-  spawnDistance: 35
-  beat: 6
+  points:
+  - {fileID: 169466063}
+  - {fileID: 1843789893}
+  - {fileID: 1088742797}
+  - {fileID: 113935479}
+  - {fileID: 172351}
+  - {fileID: 39972127}
+  beat: 3
 --- !u!4 &1786866317
 Transform:
   m_ObjectHideFlags: 0
