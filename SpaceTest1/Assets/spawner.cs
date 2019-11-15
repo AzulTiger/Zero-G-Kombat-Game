@@ -43,8 +43,8 @@ public class spawner : MonoBehaviour
 
         if (timer > beat)
         {
-            Instantiate(planes[Random.Range(0, 2)], spawnPos, playerRotation);
-            //plane.transform.localPosition = Vector3.zero;
+            GameObject plane = Instantiate(planes[Random.Range(0, 2)], spawnPos, playerRotation);
+            plane.transform.localPosition = Vector3.zero;
             //plane.transform.Rotate(transform.forward,90 * Random.Range(0,4));
             timer -= beat;
 
