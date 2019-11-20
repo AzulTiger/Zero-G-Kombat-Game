@@ -31,20 +31,17 @@ public class spawner : MonoBehaviour
 
         Vector3 spawnPos = playerPos + playerDirection * spawnDistance;
         //Vector3 spawnPos = playerPos;
-        spawnPos.x += Random.Range(-15f, 15f);
-        spawnPos.y += Random.Range(-10f, 10f);
-
-
-
-
+        spawnPos.x += Random.Range(-10f, 10f);
+        spawnPos.y += Random.Range(-6f, 6f);
 
 
 
 
         if (timer > beat)
         {
-            GameObject plane = Instantiate(planes[Random.Range(0, 2)], spawnPos, playerRotation);
-            plane.transform.localPosition = Vector3.zero;
+             GameObject plane = Instantiate(planes[Random.Range(0, 2)], spawnPos, playerRotation);
+           // GameObject plane = Instantiate(planes[Random.Range(0, 2)], points[Random.Range(0,4)]);
+           // plane.transform.localPosition = Vector3.zero;
             //plane.transform.Rotate(transform.forward,90 * Random.Range(0,4));
             timer -= beat;
 
