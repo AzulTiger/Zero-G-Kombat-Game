@@ -347,6 +347,52 @@ Transform:
   m_Father: {fileID: 1786866317}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &126442921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -214021021519348150, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &126442922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8101364381526684877, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &126442923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126442921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+    type: 3}
+  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
+    type: 3}
+  muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
+    type: 3}
+  barrelLocation: {fileID: 126442922}
+  casingExitLocation: {fileID: 126442922}
+  shotPower: 750
+--- !u!114 &126442924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126442921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346ecfb5f4dbfec4bb465a7bbc0e8dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingButton: 8192
 --- !u!1 &153013431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
@@ -534,6 +580,52 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
+--- !u!1 &517280901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8456380309890588953, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &517280902 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3265068410023541476, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &517280903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517280901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+    type: 3}
+  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
+    type: 3}
+  muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
+    type: 3}
+  barrelLocation: {fileID: 517280902}
+  casingExitLocation: {fileID: 517280902}
+  shotPower: 760
+--- !u!114 &517280904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517280901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346ecfb5f4dbfec4bb465a7bbc0e8dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingButton: 8192
 --- !u!1 &636520024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0173ba01b78fd214984e0ec5d9d686aa,
@@ -559,6 +651,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 835180067}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &663694884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4221466256065738554, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &663694885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3542332038261093472, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &663694886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663694884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+    type: 3}
+  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
+    type: 3}
+  muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
+    type: 3}
+  barrelLocation: {fileID: 663694885}
+  casingExitLocation: {fileID: 663694885}
+  shotPower: 750
+--- !u!114 &663694887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663694884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346ecfb5f4dbfec4bb465a7bbc0e8dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingButton: 2097152
 --- !u!1 &689876715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +2653,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 152.31401, z: 0}
+--- !u!1 &1797364792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5252004535936760468, guid: ef92d6ce12722f946b47f00abddd1355,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593784053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1797364794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797364792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346ecfb5f4dbfec4bb465a7bbc0e8dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingButton: 2097152
+--- !u!114 &1797364795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797364792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
+    type: 3}
+  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
+    type: 3}
+  muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
+    type: 3}
+  barrelLocation: {fileID: 517280902}
+  casingExitLocation: {fileID: 517280902}
+  shotPower: 1500
 --- !u!1 &1843789892
 GameObject:
   m_ObjectHideFlags: 0
