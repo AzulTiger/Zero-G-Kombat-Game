@@ -230,6 +230,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 0173ba01b78fd214984e0ec5d9d686aa,
+        type: 3}
+      propertyPath: m_Name
+      value: planet_C
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0173ba01b78fd214984e0ec5d9d686aa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -310,11 +315,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 15771038b2932ab48b9c1d502da34bfe, type: 2}
-    - target: {fileID: -927199367670048503, guid: 0173ba01b78fd214984e0ec5d9d686aa,
-        type: 3}
-      propertyPath: m_Name
-      value: planet_C
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0173ba01b78fd214984e0ec5d9d686aa, type: 3}
 --- !u!1 &113935478
@@ -393,6 +393,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingButton: 8192
+--- !u!95 &126442925
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126442921}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d63b84f580d7654c942b876a873080f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &153013431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
@@ -498,6 +517,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
+        type: 3}
+      propertyPath: m_Name
+      value: asteroidgrouped (2)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a1abff5c666b0bf4e8218c7676907652,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -573,11 +597,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
-    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
-        type: 3}
-      propertyPath: m_Name
-      value: asteroidgrouped (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
 --- !u!1 &517280901 stripped
@@ -626,6 +645,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingButton: 8192
+--- !u!95 &517280905
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517280901}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d63b84f580d7654c942b876a873080f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &636520024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0173ba01b78fd214984e0ec5d9d686aa,
@@ -697,6 +735,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingButton: 2097152
+--- !u!95 &663694888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663694884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d63b84f580d7654c942b876a873080f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &689876715
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +853,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
+        type: 3}
+      propertyPath: m_Name
+      value: asteroidgrouped (3)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a1abff5c666b0bf4e8218c7676907652,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -871,11 +933,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
-    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
-        type: 3}
-      propertyPath: m_Name
-      value: asteroidgrouped (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
 --- !u!1 &747744073 stripped
@@ -917,6 +974,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
+        type: 3}
+      propertyPath: m_Name
+      value: asteroidgrouped (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a1abff5c666b0bf4e8218c7676907652,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -992,11 +1054,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
-    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
-        type: 3}
-      propertyPath: m_Name
-      value: asteroidgrouped (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
 --- !u!1 &834257225
@@ -1495,6 +1552,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 84cfc0c109265f4449465a13320575a3,
+        type: 3}
+      propertyPath: m_Name
+      value: planetR
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 84cfc0c109265f4449465a13320575a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1570,11 +1632,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d179f5e544bf2ae49be732599bf381a6, type: 2}
-    - target: {fileID: -927199367670048503, guid: 84cfc0c109265f4449465a13320575a3,
-        type: 3}
-      propertyPath: m_Name
-      value: planetR
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cfc0c109265f4449465a13320575a3, type: 3}
 --- !u!1 &1088742796
@@ -1614,6 +1671,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
+        type: 3}
+      propertyPath: m_Name
+      value: asteroidgrouped (5)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a1abff5c666b0bf4e8218c7676907652,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1689,11 +1751,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
-    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
-        type: 3}
-      propertyPath: m_Name
-      value: asteroidgrouped (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
 --- !u!1 &1185315336
@@ -1949,6 +2006,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
+        type: 3}
+      propertyPath: m_Name
+      value: asteroidgrouped (4)
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a1abff5c666b0bf4e8218c7676907652,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2024,11 +2086,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
-    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
-        type: 3}
-      propertyPath: m_Name
-      value: asteroidgrouped (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
 --- !u!1001 &1435230379
@@ -2038,6 +2095,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
+        type: 3}
+      propertyPath: m_Name
+      value: asteroidgrouped
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a1abff5c666b0bf4e8218c7676907652,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2113,11 +2175,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
-    - target: {fileID: -927199367670048503, guid: a1abff5c666b0bf4e8218c7676907652,
-        type: 3}
-      propertyPath: m_Name
-      value: asteroidgrouped
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
 --- !u!1001 &1450428991
