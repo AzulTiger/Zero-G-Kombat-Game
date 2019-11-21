@@ -7,7 +7,10 @@ public class playerInput : MonoBehaviour
     // Start is called before the first frame update
     public laser[] laserRight;
     public laser[] laserLeft;
-    //public OVRInput.Button shootingButton;
+    public OVRInput.Button shootingButtonr;
+    public OVRInput.Button shootingButtonl;
+
+
 
     void Start()
     {
@@ -19,7 +22,7 @@ public class playerInput : MonoBehaviour
     {
         //Input.GetKeyDown(KeyCode.L)
         //OVRInput.GetDown(shootingButton)
-        if (Input.GetKeyDown(KeyCode.L)) 
+        if (OVRInput.GetDown(shootingButtonr)) 
         {
             //Debug.Log("Press worked");
             foreach (laser r in laserRight)
@@ -31,7 +34,8 @@ public class playerInput : MonoBehaviour
             }
            
         }
-        if (Input.GetKeyDown(KeyCode.J))
+        //Input.GetKeyDown(KeyCode.J)
+        if (OVRInput.GetDown(shootingButtonl))
         {
             //Debug.Log("Press worked");
             foreach (laser l in laserLeft)
