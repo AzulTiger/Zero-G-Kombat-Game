@@ -150,8 +150,10 @@ public class OVRPlayerController : MonoBehaviour
 	private float buttonRotation = 0f;
 	private bool ReadyToSnapTurn; // Set to true when a snap turn has occurred, code requires one frame of centered thumbstick to enable another snap turn.
 	private bool playerControllerEnabled = false;
+    private float pitch = 0f;
+    private float roll = 0f;
 
-	void Start()
+    void Start()
 	{
 		// Add eye-depth as a camera offset from the player controller
 		var p = CameraRig.transform.localPosition;
@@ -271,7 +273,8 @@ public class OVRPlayerController : MonoBehaviour
 		float motorDamp = (1.0f + (Damping * SimulationRate * Time.deltaTime));
 
 		MoveThrottle.x /= motorDamp;
-		MoveThrottle.y = (MoveThrottle.y > 0.0f) ? (MoveThrottle.y / motorDamp) : MoveThrottle.y;
+        //MoveThrottle.y = (MoveThrottle.y > 0.0f) ? (MoveThrottle.y / motorDamp) : MoveThrottle.y;
+        MoveThrottle.y /= motorDamp;
 		MoveThrottle.z /= motorDamp;
 
 		moveDirection += MoveThrottle * SimulationRate * Time.deltaTime;
@@ -360,7 +363,8 @@ public class OVRPlayerController : MonoBehaviour
 
 			Quaternion ort = transform.rotation;
 			Vector3 ortEuler = ort.eulerAngles;
-			ortEuler.z = ortEuler.x = 0f;
+            //ortEuler.z = ortEuler.x = 0f;
+  
 			ort = Quaternion.Euler(ortEuler);
 
 			if (moveForward)
@@ -390,25 +394,39 @@ public class OVRPlayerController : MonoBehaviour
 			}
 
 			if (primaryAxis.y > 0.0f)
-				MoveThrottle += ort * (primaryAxis.y * transform.lossyScale.z * moveInfluence * Vector3.forward);
+                MoveThrottle += ort * (primaryAxis.y * transform.lossyScale.z * moveInfluence * Vector3.forward);
+                
 
-			if (primaryAxis.y < 0.0f)
-				MoveThrottle += ort * (Mathf.Abs(primaryAxis.y) * transform.lossyScale.z * moveInfluence *
-									   BackAndSideDampen * Vector3.back);
 
-			if (primaryAxis.x < 0.0f)
-				MoveThrottle += ort * (Mathf.Abs(primaryAxis.x) * transform.lossyScale.x * moveInfluence *
-									   BackAndSideDampen * Vector3.left);
+
+
+            if (primaryAxis.y < 0.0f)
+                MoveThrottle += ort * (Mathf.Abs(primaryAxis.y) * transform.lossyScale.z * moveInfluence *
+                BackAndSideDampen * Vector3.back);
+
+
+            // For roll comment the 2 ifs below
+            
+            if (primaryAxis.x < 0.0f)
+                MoveThrottle += ort * (Mathf.Abs(primaryAxis.x) * transform.lossyScale.x * moveInfluence *
+                BackAndSideDampen * Vector3.left);
+                
+
 
 			if (primaryAxis.x > 0.0f)
 				MoveThrottle += ort * (primaryAxis.x * transform.lossyScale.x * moveInfluence * BackAndSideDampen *
 									   Vector3.right);
+            
+            
 		}
 
 		if (EnableRotation)
 		{
 			Vector3 euler = transform.rotation.eulerAngles;
-			float rotateInfluence = SimulationRate * Time.deltaTime * RotationAmount * RotationScaleMultiplier;
+            /////////////////////////////////////////////////////
+            
+            //////////////////////////////////////////////////////////
+            float rotateInfluence = SimulationRate * Time.deltaTime * RotationAmount * RotationScaleMultiplier;
 
 			bool curHatLeft = OVRInput.Get(OVRInput.Button.PrimaryShoulder);
 
@@ -461,7 +479,9 @@ public class OVRPlayerController : MonoBehaviour
 			else
 			{
 				Vector2 secondaryAxis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
-				if (RotationEitherThumbstick)
+                //Vector2 primaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick); ---> for roll
+
+                if (RotationEitherThumbstick)
 				{
 					Vector2 altSecondaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 					if (secondaryAxis.sqrMagnitude < altSecondaryAxis.sqrMagnitude)
@@ -469,12 +489,23 @@ public class OVRPlayerController : MonoBehaviour
 						secondaryAxis = altSecondaryAxis;
 					}
 				}
-				euler.y += secondaryAxis.x * rotateInfluence;
-			}
+                euler.y += secondaryAxis.x * rotateInfluence;
+
+                //ADDED THIS LINE
+                ///////////////////////////////////////////////////////////////
+                //euler.x += -secondaryAxis.y * rotateInfluence;
+                pitch = -secondaryAxis.y * rotateInfluence;
+                //roll = -primaryAxis.x * rotateInfluence; ---> for roll
+                ///////////////////////////////////////////////////////////////
+            }
 
 			transform.rotation = Quaternion.Euler(euler);
-		}
-	}
+            //transform.Rotate(pitch,0,roll); ----> for roll
+            transform.Rotate(pitch,0,0); 
+
+
+        }
+    }
 
 
 	/// <summary>
