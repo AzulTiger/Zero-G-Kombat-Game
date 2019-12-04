@@ -8,6 +8,8 @@ public class enemy_moveFighter : MonoBehaviour
     public GameObject Player;
     public float rotationalDamp = 0.5f;
     public float movementSpeed = 10f;
+    //public GameObject explosion;
+    //private  int hitCount = 0;
 
 
 
@@ -41,4 +43,12 @@ public class enemy_moveFighter : MonoBehaviour
     {
         transform.position += transform.forward * movementSpeed * Time.deltaTime;
     }
+    /*public int GotHit(Vector3 pos)
+    {
+        GameObject go = Instantiate(explosion, pos, Quaternion.identity, transform) as GameObject;
+        Destroy(go, 6f);
+        hitCount++;
+        return hitCount;
+
+    }*/
 }

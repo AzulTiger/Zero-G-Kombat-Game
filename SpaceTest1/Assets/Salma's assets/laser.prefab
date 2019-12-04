@@ -140,6 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7807251ae07d4c40aefeb9f629d1421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionps: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
+    type: 3}
   laserOffTime: 10
   laserDistance: 300
   fireDelay: 2
+  hitToDie: 2

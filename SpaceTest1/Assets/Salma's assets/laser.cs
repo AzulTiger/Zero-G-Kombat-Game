@@ -11,13 +11,17 @@ public class Global
 }
 public class laser : MonoBehaviour
 {
-    
+    public GameObject explosionps;
+    public LayerMask layer;
+
+
     // Start is called before the first frame update
     LineRenderer lr;
     public float laserOffTime = 5f;
     public float laserDistance = 300f;
     public float fireDelay = 2.0f;
     bool enableFire;
+    public int hitToDie = 2;
 
     void Awake()
     {
@@ -46,12 +50,20 @@ public class laser : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward) * laserDistance;
-        if(Physics.Raycast(transform.position, fwd, out hit))
+        if(Physics.Raycast(transform.position, fwd, out hit,30,layer))
         {
             Debug.Log("We hit: " + hit.transform.name);
             Global.scoreCount = Global.scoreCount + 1;
             Debug.Log("Score: " + Global.scoreCount);
-            Destroy(hit.transform.gameObject);
+            //int hits_of_inst = hit.transform.GetComponent<enemy_moveFighter>().GotHit(hit.point);
+            //int hits_of_int = hit.transform.GetComponent<explosionScript>().GotHit(hit.point);
+            // hit.transform.GetComponent<explosionScript>().GotHit(hit.point);
+            GameObject go = Instantiate(explosionps, hit.point, Quaternion.identity);
+           // if (Physics.Raycast(transform.position, transform.forward, out hit, 1, layer))
+                 Destroy(hit.transform.gameObject);
+
+            
+
 
             return hit.point;
         }
@@ -95,5 +107,4 @@ public class laser : MonoBehaviour
     {
         enableFire = true;
     }
-
 }

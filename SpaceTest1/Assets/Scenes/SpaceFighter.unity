@@ -385,13 +385,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
     type: 3}
-  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
-    type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
     type: 3}
   barrelLocation: {fileID: 1271841506}
-  casingExitLocation: {fileID: 1271841506}
-  shotPower: 750
+  shotPower: 6000
 --- !u!114 &126442924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,7 +500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394842947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.759, y: -0.48093367, z: 3.55}
+  m_LocalPosition: {x: -2.759, y: -0.48093367, z: 3.549999}
   m_LocalScale: {x: 0.5000589, y: 0.5000566, z: 0.5000023}
   m_Children: []
   m_Father: {fileID: 457979890}
@@ -677,13 +674,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
     type: 3}
-  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
-    type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
     type: 3}
   barrelLocation: {fileID: 394842948}
-  casingExitLocation: {fileID: 394842948}
-  shotPower: 760
+  shotPower: 6000
 --- !u!114 &517280904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,13 +755,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
     type: 3}
-  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
-    type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
     type: 3}
   barrelLocation: {fileID: 958362388}
-  casingExitLocation: {fileID: 958362388}
-  shotPower: 750
+  shotPower: 6000
 --- !u!114 &663694887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1463,16 +1454,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: m_UseWorldSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: laserOffTime
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
         type: 3}
       propertyPath: laserOffTime
@@ -1487,6 +1468,27 @@ PrefabInstance:
         type: 3}
       propertyPath: fireDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: explosionps
+      value: 
+      objectReference: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
+        type: 3}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: layer.m_Bits
+      value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: m_UseWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: laserOffTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81, type: 3}
@@ -1846,16 +1848,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: m_UseWorldSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: laserOffTime
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
         type: 3}
       propertyPath: laserOffTime
@@ -1870,6 +1862,27 @@ PrefabInstance:
         type: 3}
       propertyPath: fireDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: explosionps
+      value: 
+      objectReference: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
+        type: 3}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: layer.m_Bits
+      value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: m_UseWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: laserOffTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81, type: 3}
@@ -2084,6 +2097,7 @@ GameObject:
   - component: {fileID: 1206828866}
   - component: {fileID: 1206828865}
   - component: {fileID: 1206828867}
+  - component: {fileID: 1206828868}
   m_Layer: 10
   m_Name: spaceship2.2 Container
   m_TagString: Untagged
@@ -2136,6 +2150,19 @@ MonoBehaviour:
   speed: 3
   obstacleRange: 5
   paintballPrefab: {fileID: 0}
+--- !u!114 &1206828868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206828864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401be5e13e8fdaf40ab01d8683fb9af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionps: {fileID: 0}
 --- !u!1 &1250452909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ef92d6ce12722f946b47f00abddd1355,
@@ -2168,6 +2195,18 @@ MonoBehaviour:
   - {fileID: 1155057202}
   shootingButtonr: 4194304
   shootingButtonl: 16384
+--- !u!114 &1250452912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250452909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4fe19946054d54cb0d932fad82fb00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1271841505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,7 +2231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271841505}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.215, y: -0.48093367, z: 3.5499992}
+  m_LocalPosition: {x: -2.215, y: -0.48093367, z: 3.549999}
   m_LocalScale: {x: 0.50005996, y: 0.50005996, z: 0.5}
   m_Children: []
   m_Father: {fileID: 457979890}
@@ -2570,6 +2609,7 @@ GameObject:
   - component: {fileID: 1453848910}
   - component: {fileID: 1453848909}
   - component: {fileID: 1453848911}
+  - component: {fileID: 1453848912}
   m_Layer: 10
   m_Name: spaceship1.1 Container
   m_TagString: Untagged
@@ -2622,6 +2662,20 @@ MonoBehaviour:
   speed: 6
   obstacleRange: 4
   paintballPrefab: {fileID: 2715103672964912813, guid: 0c5f1b759642aed459847d1751aa7dae,
+    type: 3}
+--- !u!114 &1453848912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453848908}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401be5e13e8fdaf40ab01d8683fb9af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionps: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
     type: 3}
 --- !u!1 &1481500445 stripped
 GameObject:
@@ -2984,7 +3038,7 @@ MonoBehaviour:
   - {fileID: 1206828864}
   player: {fileID: 457979884}
   spawnDistance: 120
-  beat: 7
+  beat: 4
 --- !u!4 &1786866317
 Transform:
   m_ObjectHideFlags: 0
@@ -3149,13 +3203,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1122964723992546, guid: 8a41ccf7f50a0bb47bebb1aa010d8fd5,
     type: 3}
-  casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
-    type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: e802c9c5b472d2345a808aca4bc81014,
     type: 3}
   barrelLocation: {fileID: 1673700367}
-  casingExitLocation: {fileID: 1673700367}
-  shotPower: 1500
+  shotPower: 6000
 --- !u!1 &1843789892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,16 +3304,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: m_UseWorldSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: laserOffTime
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
         type: 3}
       propertyPath: laserOffTime
@@ -3277,6 +3318,27 @@ PrefabInstance:
         type: 3}
       propertyPath: fireDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: explosionps
+      value: 
+      objectReference: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
+        type: 3}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: layer.m_Bits
+      value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: m_UseWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: laserOffTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81, type: 3}
@@ -3348,16 +3410,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: m_UseWorldSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
-        type: 3}
-      propertyPath: laserOffTime
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
         type: 3}
       propertyPath: laserOffTime
@@ -3372,6 +3424,27 @@ PrefabInstance:
         type: 3}
       propertyPath: fireDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: explosionps
+      value: 
+      objectReference: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
+        type: 3}
+    - target: {fileID: 1111034559328047101, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: layer.m_Bits
+      value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680989990743967839, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: m_UseWorldSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81,
+        type: 3}
+      propertyPath: laserOffTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5289830403764398519, guid: 89959791e41222c4bacf963583bd9e81, type: 3}
