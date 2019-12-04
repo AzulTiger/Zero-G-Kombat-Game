@@ -23,6 +23,7 @@ public class distroy : MonoBehaviour
             //if(Vector3.Angle(transform.position-previousPos,hit.transform.up)>130)
             // {
             // hit.transform.GetComponent<explosionScript>().GotHit(hit.point);
+            Global.scoreCount = Global.scoreCount + 1;
             GameObject go = Instantiate(explosionps, hit.point, Quaternion.identity);
             //Destroy(hit.transform.gameObject);
             Destroy(hit.transform.gameObject);
