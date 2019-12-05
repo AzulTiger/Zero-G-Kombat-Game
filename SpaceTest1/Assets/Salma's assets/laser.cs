@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Global
 {
     public static int scoreCount = 0;
+    public static float HealthCount = 0.0f;
 }
 public class laser : MonoBehaviour
 {

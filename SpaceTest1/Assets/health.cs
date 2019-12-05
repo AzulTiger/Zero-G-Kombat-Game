@@ -21,7 +21,8 @@ public class health : MonoBehaviour
     {
         if((collision.gameObject.name == "spaceship1 (1)") || (collision.gameObject.name == "spaceship2 (1)"))
         {
-
+            Global.HealthCount = Global.HealthCount + 1;
+            //
             Vector3 point = collision.contacts[0].point;
 
             GameObject go = Instantiate(explosionps, point, Quaternion.identity);
