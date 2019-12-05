@@ -70,7 +70,7 @@ public class laser : MonoBehaviour
            // if (Physics.Raycast(transform.position, transform.forward, out hit, 1, layer))
                  Destroy(hit.transform.gameObject);
             //adding explosion sound
-            PlayExplosionSound();
+           // PlayExplosionSound();
 
 
 
