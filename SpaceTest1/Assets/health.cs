@@ -6,10 +6,18 @@ public class health : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject explosionps;
+    public AudioSource ExplosionSound;
     void Start()
     {
         
     }
+
+    public void PlayExplosionSound()
+    {
+        ExplosionSound.Play();
+
+    }
+
 
     // Update is called once per frame
     /*void Update()
@@ -27,6 +35,8 @@ public class health : MonoBehaviour
 
             GameObject go = Instantiate(explosionps, point, Quaternion.identity);
             Destroy(collision.gameObject);
+            //add sound effect
+            ExplosionSound.Play();
         }
     }
 

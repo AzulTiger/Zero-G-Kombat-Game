@@ -14,6 +14,7 @@ public class laser : MonoBehaviour
 {
     public GameObject explosionps;
     public LayerMask layer;
+    public AudioSource ExplosionSound;
 
 
     // Start is called before the first frame update
@@ -34,6 +35,12 @@ public class laser : MonoBehaviour
     {
         lr.enabled = false;
         enableFire = true;
+
+    }
+
+    public void PlayExplosionSound()
+    {
+        ExplosionSound.Play();
 
     }
 
@@ -62,8 +69,10 @@ public class laser : MonoBehaviour
             GameObject go = Instantiate(explosionps, hit.point, Quaternion.identity);
            // if (Physics.Raycast(transform.position, transform.forward, out hit, 1, layer))
                  Destroy(hit.transform.gameObject);
+            //adding explosion sound
+            PlayExplosionSound();
 
-            
+
 
 
             return hit.point;

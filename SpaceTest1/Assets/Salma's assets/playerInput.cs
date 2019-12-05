@@ -9,12 +9,19 @@ public class playerInput : MonoBehaviour
     public laser[] laserLeft;
     public OVRInput.Button shootingButtonr;
     public OVRInput.Button shootingButtonl;
+    public AudioSource LaserShot;
 
 
 
     void Start()
     {
         
+    }
+
+    public void PlayLaserShot()
+    {
+        LaserShot.Play();
+
     }
 
     // Update is called once per frame
@@ -30,7 +37,8 @@ public class playerInput : MonoBehaviour
                 //Vector3 pos = transform.forward * l.Distance;
                 
                 r.FireLaser();
-                
+                PlayLaserShot();
+
             }
            
         }
@@ -43,6 +51,8 @@ public class playerInput : MonoBehaviour
                 //Vector3 pos = transform.forward * l.Distance;
 
                 l.FireLaser();
+                PlayLaserShot();
+
 
             }
 

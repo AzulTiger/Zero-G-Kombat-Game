@@ -6,11 +6,17 @@ public class ShootTrigger : MonoBehaviour
 {
     private SimpleShoot simpleShoot;
     public OVRInput.Button shootingButton;
+    public AudioSource GunShot;
     // Start is called before the first frame update
     void Start()
     {
         // Access the simple shoot script
         simpleShoot = GetComponent<SimpleShoot>();
+
+    }
+    public void PlayGunShot()
+    {
+        GunShot.Play();
 
     }
 
@@ -22,7 +28,15 @@ public class ShootTrigger : MonoBehaviour
         {
             //Shoot !!!
             simpleShoot.TriggerShoot();
+            PlayGunShot();
         }
-        
+        /*
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            simpleShoot.TriggerShoot();
+            PlayGunShot();
+        }
+        */
+
     }
 }

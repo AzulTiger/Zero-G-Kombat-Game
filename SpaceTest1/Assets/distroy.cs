@@ -5,12 +5,19 @@ using UnityEngine;
 public class distroy : MonoBehaviour
 {
     public GameObject explosionps;
+    public AudioSource ExplosionSound;
 
     public LayerMask layer;
     private Vector3 previousPos;
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    public void PlayExplosionSound()
+    {
+        ExplosionSound.Play();
 
     }
 
@@ -27,6 +34,8 @@ public class distroy : MonoBehaviour
             GameObject go = Instantiate(explosionps, hit.point, Quaternion.identity);
             //Destroy(hit.transform.gameObject);
             Destroy(hit.transform.gameObject);
+            PlayExplosionSound();
+
 
             // }
 
