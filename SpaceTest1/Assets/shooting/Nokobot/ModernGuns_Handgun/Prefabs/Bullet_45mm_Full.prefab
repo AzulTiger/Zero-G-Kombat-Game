@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 136436518488396882}
   - component: {fileID: 54238672335603214}
   - component: {fileID: 3178262593767002331}
+  - component: {fileID: 6243441880931551208}
   m_Layer: 0
   m_Name: Bullet_45mm_Full
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1122964723992546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
   m_Children:
   - {fileID: 4602091987834400}
   m_Father: {fileID: 0}
@@ -62,7 +63,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &3178262593767002331
 MonoBehaviour:
@@ -71,11 +72,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122964723992546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9d949d8c055f7d4693c74fd369e2796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 1536
+--- !u!114 &6243441880931551208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122964723992546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db06afb5ccd53ca4c8076906f3fe6cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionps: {fileID: 2499183350983578905, guid: cbe6cf5d9a30f1f4fabe79226da138ab,
+    type: 3}
   layer:
     serializedVersion: 2
     m_Bits: 1536
