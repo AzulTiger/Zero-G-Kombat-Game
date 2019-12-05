@@ -536,13 +536,8 @@ MonoBehaviour:
   planes:
   - {fileID: 4991522696209557595, guid: 02d0d7bb0313d5c45a2f12fb133051ef, type: 3}
   - {fileID: 2391839630784802668, guid: ed49f85b4de7ff440b81e7068a393973, type: 3}
-  points:
-  - {fileID: 371525840}
-  - {fileID: 1043898175}
-  - {fileID: 29312018}
-  - {fileID: 1298449827}
-  - {fileID: 869695561}
-  - {fileID: 1616854763}
+  player: {fileID: 1174623781}
+  spawnDistance: 10
   beat: 2
 --- !u!4 &425111904
 Transform:
@@ -1255,6 +1250,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bd25d8b432c29d2499e088a0902d50f0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1abff5c666b0bf4e8218c7676907652, type: 3}
+--- !u!1 &1174623781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1611954289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1206137546
 PrefabInstance:
   m_ObjectHideFlags: 0
